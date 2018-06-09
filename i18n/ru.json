@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kitsune Solar"
+		]
+	},
+	"mw-ext-license-desc": "Интеграция текста лицензии в статью.",
+	"mw-ext-license-error-category": "META:ERROR.EXT.License",
+	"mw-ext-license-description": "Информация распространяется под лицензией",
+	"mw-ext-license-meta": "",
+	"mw-ext-license-rules-unknown": "Неизвестно",
+	"mw-ext-license-permissions": "Разрешения",
+	"mw-ext-license-conditions": "Условия",
+	"mw-ext-license-limitations": "Ограничения",
+	"mw-ext-license-commercial-use": "This software and derivatives may be used for commercial purposes.",
+	"mw-ext-license-distribution": "This software may be distributed.",
+	"mw-ext-license-modification": "This software may be modified.",
+	"mw-ext-license-patent-use-yes": "This license provides an express grant of patent rights from contributors.",
+	"mw-ext-license-patent-use-no": "This license explicitly states that it does NOT grant any rights in the patents of contributors.",
+	"mw-ext-license-private-use": "This software may be used and modified in private.",
+	"mw-ext-license-disclose-source": "Source code must be made available when the software is distributed.",
+	"mw-ext-license-license-and-copyright-notice": "A copy of the license and copyright notice must be included with the software.",
+	"mw-ext-license-network-use-is-distribution": "Users who interact with the software via network are given the right to receive a copy of the source code.",
+	"mw-ext-license-same-license": "Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used.",
+	"mw-ext-license-same-license-file": "Modifications of existing files must be released under the same license when distributing the software. In some cases a similar or related license may be used.",
+	"mw-ext-license-same-license-library": "Modifications must be released under the same license when distributing the software. In some cases a similar or related license may be used, or this condition may not apply to works that use the software as a library.",
+	"mw-ext-license-state-changes": "Changes made to the code must be documented.",
+	"mw-ext-license-liability": "This license includes a limitation of liability.",
+	"mw-ext-license-trademark-use": "This license explicitly states that it does NOT grant trademark rights, even though licenses without such a statement probably do not grant any implicit trademark rights.",
+	"mw-ext-license-warranty": "The license explicitly states that it does NOT provide any warranty.",
+	"mw-ext-license-custom-content": "Это произведение использует собственную лицензию.",
+	"mw-ext-license-none-content": "Я считаю, что это произведение опубликовано под свободной лицензией, либо юридически находится в общественном достоянии. Я понимаю, что если я своевременно не укажу необходимую информацию о лицензировании, файл может быть удалён."
+}

@@ -1,0 +1,835 @@
+{
+	"license": {
+		"afl-3.0": {
+			"id": "afl",
+			"title": "Academic Free License v3.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/AFL-3.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"agpl-3.0": {
+			"id": "agpl",
+			"title": "GNU Affero General Public License v3.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/AGPL-3.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"network-use-is-distribution",
+					"same-license",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"apache-2.0": {
+			"id": "apache",
+			"title": "Apache License 2.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/Apache-2.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"artistic-2.0": {
+			"id": "artistic",
+			"title": "Artistic License 2.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/Artistic-2.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"bsd-2-clause": {
+			"id": "bsd-2-clause",
+			"title": "BSD 2-clause &laquo;Simplified&raquo; License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/BSD-2-Clause",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"bsd-3-clause-clear": {
+			"id": "bsd-3-clause-clear",
+			"title": "BSD 3-clause Clear License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/BSD-3-Clause",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"liability",
+					"patent-use-no",
+					"warranty"
+				]
+			}
+		},
+		"bsd-3-clause": {
+			"id": "bsd-3-clause",
+			"title": "BSD 3-clause &laquo;New&raquo; or &laquo;Revised&raquo; License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/BSD-3-Clause",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"bsl-1.0": {
+			"id": "bsl-10",
+			"title": "Boost Software License 1.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/BSL-1.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"cc-by-4.0": {
+			"id": "cc-by",
+			"title": "Creative Commons Attribution 4.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://creativecommons.org/licenses/by/4.0/",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"patent-use-no",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"cc-by-sa-4.0": {
+			"id": "cc-by-sa",
+			"title": "Creative Commons Attribution Share Alike 4.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://creativecommons.org/licenses/by-sa/4.0/",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice",
+					"same-license",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"patent-use-no",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"cc0-1.0": {
+			"id": "cc0",
+			"title": "Creative Commons Zero v1.0 Universal",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [],
+				"limitation": [
+					"liability",
+					"patent-use-no",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"ecl-2.0": {
+			"id": "ecl",
+			"title": "Educational Community License v2.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/ECL-2.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"epl-1.0": {
+			"id": "epl",
+			"title": "Eclipse Public License 1.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/EPL-1.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"same-license"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"eupl-1.1": {
+			"id": "eupl",
+			"title": "European Union Public License 1.1",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/EUPL-1.1",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"network-use-is-distribution",
+					"same-license",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"gpl-2.0": {
+			"id": "gpl20",
+			"title": "GNU General Public License v2.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/GPL-2.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"same-license",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"gpl-3.0": {
+			"id": "gpl30",
+			"title": "GNU General Public License v3.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/GPL-3.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"same-license",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"isc": {
+			"id": "isc",
+			"title": "ISC License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/ISC",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"lgpl-2.1": {
+			"id": "lgpl21",
+			"title": "GNU Lesser General Public License v2.1",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/LGPL-2.1",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"same-license-library",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"lgpl-3.0": {
+			"id": "lgpl30",
+			"title": "GNU Lesser General Public License v3.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/LGPL-3.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"same-license-library",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"lppl-1.3c": {
+			"id": "lppl13с",
+			"title": "LaTeX Project Public License v1.3c",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/LPPL-1.3c",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"mit": {
+			"id": "mit",
+			"title": "MIT License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/MIT",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"mpl-2.0": {
+			"id": "mpl20",
+			"title": "Mozilla Public License 2.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/MPL-2.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"same-license-file"
+				],
+				"limitation": [
+					"liability",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"ms-pl": {
+			"id": "mspl",
+			"title": "Microsoft Public License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/MS-PL",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"ms-rl": {
+			"id": "msrl",
+			"title": "Microsoft Reciprocal License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/MS-RL",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"same-license-file"
+				],
+				"limitation": [
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"ncsa": {
+			"id": "ncsa",
+			"title": "University of Illinois/NCSA Open Source License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/NCSA",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"ofl-1.1": {
+			"id": "ofl11",
+			"title": "SIL Open Font License 1.1",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/OFL-1.1",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice",
+					"same-license"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"osl-3.0": {
+			"id": "osl30",
+			"title": "Open Software License 3.0",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/OSL-3.0",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"patent-use-yes",
+					"private-use"
+				],
+				"condition": [
+					"disclose-source",
+					"license-and-copyright-notice",
+					"network-use-is-distribution",
+					"same-license",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"trademark-use",
+					"warranty"
+				]
+			}
+		},
+		"postgresql": {
+			"id": "postgresql",
+			"title": "PostgreSQL License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/PostgreSQL",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"unlicense": {
+			"id": "unlicense",
+			"title": "The Unlicense",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"wtfpl": {
+			"id": "wtfpl",
+			"title": "Do What The F*ck You Want To Public License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [],
+				"limitation": []
+			}
+		},
+		"zlib": {
+			"id": "zlib",
+			"title": "zlib License",
+			"icon": "fas fa-shield-alt",
+			"category": "",
+			"content": "",
+			"status": "",
+			"url": "https://opensource.org/licenses/Zlib",
+			"rule": {
+				"permission": [
+					"commercial-use",
+					"distribution",
+					"modification",
+					"private-use"
+				],
+				"condition": [
+					"license-and-copyright-notice",
+					"state-changes"
+				],
+				"limitation": [
+					"liability",
+					"warranty"
+				]
+			}
+		},
+		"none": {
+			"id": "none",
+			"title": "No license",
+			"icon": "far fa-question-circle",
+			"category": "",
+			"content": "none-content",
+			"status": "",
+			"url": "",
+			"rule": {
+				"permission": [],
+				"condition": [],
+				"limitation": []
+			}
+		},
+		"custom": {
+			"id": "custom",
+			"title": "Custom license",
+			"icon": "fas fa-user-shield",
+			"category": "",
+			"content": "custom-content",
+			"status": "",
+			"url": "",
+			"rule": {
+				"permission": [],
+				"condition": [],
+				"limitation": []
+			}
+		}
+	}
+}
