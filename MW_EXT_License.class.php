@@ -1,9 +1,12 @@
 <?php
 
+namespace MediaWiki\Extension\MW_EXT_License;
+
+use OutputPage, Parser, Skin;
+
 /**
  * Class MW_EXT_License
  * ------------------------------------------------------------------------------------------------------------------ */
-
 class MW_EXT_License {
 
 	/**
@@ -193,7 +196,7 @@ class MW_EXT_License {
 	 * @param Parser $parser
 	 *
 	 * @return bool
-	 * @throws MWException
+	 * @throws \MWException
 	 * -------------------------------------------------------------------------------------------------------------- */
 
 	public static function onParserFirstCallInit( Parser $parser ) {
@@ -208,7 +211,7 @@ class MW_EXT_License {
 	 * @param Parser $parser
 	 * @param string $type
 	 *
-	 * @return bool|string
+	 * @return string
 	 * -------------------------------------------------------------------------------------------------------------- */
 
 	public static function onRenderTag( Parser $parser, $type = '' ) {
@@ -220,7 +223,7 @@ class MW_EXT_License {
 		if ( ! self::getLicense( $outType ) ) {
 			$parser->addTrackingCategory( 'mw-ext-license-error-category' );
 
-			return false;
+			return null;
 		}
 
 		// Get title.
@@ -312,7 +315,7 @@ class MW_EXT_License {
 	 * -------------------------------------------------------------------------------------------------------------- */
 
 	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
-		$out->addModuleStyles( array( 'ext.mw.license.styles' ) );
+		$out->addModuleStyles( [ 'ext.mw.license.styles' ] );
 
 		return true;
 	}
