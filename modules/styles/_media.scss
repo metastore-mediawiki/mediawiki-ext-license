@@ -1,10 +1,14 @@
-@media (max-width: 1170px) {
+@media (max-width: 1087px) {
 	.mw-ext-license {
-		.mw-ext-license-body {
-			display: block;
-		}
-		.mw-ext-license-icon {
-			display: none;
+		margin: 1em 0;
+		max-width: unset;
+		.mw-ext-license {
+			&-body {
+				display: block;
+			}
+			&-icon {
+				display: none;
+			}
 		}
 	}
 }
