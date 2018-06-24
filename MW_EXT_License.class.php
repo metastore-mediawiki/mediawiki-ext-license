@@ -256,8 +256,7 @@ class MW_EXT_License {
 		$outHTML .= '<div class="mw-ext-license-content">';
 		$outHTML .= '<h4>' . $outTitle . '</h4><p>' . $outDescription . '</p>' . $outContent;
 		$outHTML .= '<div class="mw-ext-license-rules">' . $outPermission . $outCondition . $outLimitation . '</div>';
-		$outHTML .= '</div>';
-		$outHTML .= '</div></div>';
+		$outHTML .= '</div></div></div>';
 
 		// Out parser.
 		$outParser = $parser->insertStripItem( $outHTML, $parser->mStripState );
