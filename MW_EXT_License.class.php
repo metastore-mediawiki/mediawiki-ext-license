@@ -225,36 +225,45 @@ class MW_EXT_License {
 
 		// Render permission.
 		if ( $getPermission ) {
-			$outPermission = '<div class="mw-ext-license-permissions"><h4>' . $msgPermissions . '</h4><ul>';
+			$outPermission = '<div class="mw-ext-license-permissions">';
+			$outPermission .= '<div class="mw-ext-license-permissions-title">' . $msgPermissions . '</div>';
+			$outPermission .= '<div class="mw-ext-license-permissions-content">';
+			$outPermission .= '<ul>';
 			foreach ( $getPermission as $value ) {
 				$outPermission .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
 			}
-			$outPermission .= '</ul></div>';
+			$outPermission .= '</ul></div></div>';
 		}
 
 		// Render condition.
 		if ( $getCondition ) {
-			$outCondition = '<div class="mw-ext-license-conditions"><h4>' . $msgConditions . '</h4><ul>';
+			$outCondition = '<div class="mw-ext-license-conditions">';
+			$outCondition .= '<div class="mw-ext-license-conditions-title">' . $msgConditions . '</div>';
+			$outCondition .= '<div class="mw-ext-license-conditions-content">';
+			$outCondition .= '<ul>';
 			foreach ( $getCondition as $value ) {
 				$outCondition .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
 			}
-			$outCondition .= '</ul></div>';
+			$outCondition .= '</ul></div></div>';
 		}
 
 		// Render limitation.
 		if ( $getLimitation ) {
-			$outLimitation = '<div class="mw-ext-license-limitations"><h4>' . $msgLimitations . '</h4><ul>';
+			$outLimitation = '<div class="mw-ext-license-limitations">';
+			$outLimitation .= '<div class="mw-ext-license-limitations-title">' . $msgLimitations . '</div>';
+			$outLimitation .= '<div class="mw-ext-license-limitations-content">';
+			$outLimitation .= '<ul>';
 			foreach ( $getLimitation as $value ) {
 				$outLimitation .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
 			}
-			$outLimitation .= '</ul></div>';
+			$outLimitation .= '</ul></div></div>';
 		}
 
 		// Out HTML.
-		$outHTML = '<div class="mw-ext-license"><div class="mw-ext-license-body">';
+		$outHTML = '<div class="mw-ext-license navigation-not-searchable"><div class="mw-ext-license-body">';
 		$outHTML .= '<div class="mw-ext-license-icon"><div><i class="far fa-copyright"></i><i class="' . $outIcon . '"></i></div></div>';
 		$outHTML .= '<div class="mw-ext-license-content">';
-		$outHTML .= '<h4>' . $outTitle . '</h4><p>' . $outDescription . '</p>' . $outContent;
+		$outHTML .= '<div class="mw-ext-license-title">' . $outTitle . '</div><p>' . $outDescription . '</p>' . $outContent;
 		$outHTML .= '<div class="mw-ext-license-rules">' . $outPermission . $outCondition . $outLimitation . '</div>';
 		$outHTML .= '</div></div></div>';
 
