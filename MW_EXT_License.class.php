@@ -227,7 +227,7 @@ class MW_EXT_License {
 		if ( $getPermission ) {
 			$outPermission = '<div class="mw-ext-license-permissions">';
 			$outPermission .= '<div class="mw-ext-license-permissions-title">' . $msgPermissions . '</div>';
-			$outPermission .= '<div class="mw-ext-license-permissions-content">';
+			$outPermission .= '<div class="mw-ext-license-permissions-list">';
 			$outPermission .= '<ul>';
 			foreach ( $getPermission as $value ) {
 				$outPermission .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
@@ -239,7 +239,7 @@ class MW_EXT_License {
 		if ( $getCondition ) {
 			$outCondition = '<div class="mw-ext-license-conditions">';
 			$outCondition .= '<div class="mw-ext-license-conditions-title">' . $msgConditions . '</div>';
-			$outCondition .= '<div class="mw-ext-license-conditions-content">';
+			$outCondition .= '<div class="mw-ext-license-conditions-list">';
 			$outCondition .= '<ul>';
 			foreach ( $getCondition as $value ) {
 				$outCondition .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
@@ -251,7 +251,7 @@ class MW_EXT_License {
 		if ( $getLimitation ) {
 			$outLimitation = '<div class="mw-ext-license-limitations">';
 			$outLimitation .= '<div class="mw-ext-license-limitations-title">' . $msgLimitations . '</div>';
-			$outLimitation .= '<div class="mw-ext-license-limitations-content">';
+			$outLimitation .= '<div class="mw-ext-license-limitations-list">';
 			$outLimitation .= '<ul>';
 			foreach ( $getLimitation as $value ) {
 				$outLimitation .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
