@@ -160,7 +160,7 @@ class MW_EXT_License {
 	 * -------------------------------------------------------------------------------------------------------------- */
 
 	public static function onParserFirstCallInit( Parser $parser ) {
-		$parser->setFunctionHook( 'license', __CLASS__ . '::onRenderTag' );
+		$parser->setFunctionHook( 'license', [ __CLASS__, 'onRenderTag' ] );
 
 		return true;
 	}
