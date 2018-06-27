@@ -1,30 +1,5 @@
 .mw-ext-license {
-	box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
-	margin: 1em 0;
 	.mw-ext-license {
-		&-body {
-			display: grid;
-			grid-template-columns: 5em 1fr;
-		}
-		&-icon {
-			display: grid;
-			align-items: center;
-			justify-items: center;
-			background: hsla(0, 0%, 0%, .03);
-			color: hsl(0, 0%, 86%);
-			font-size: 2em;
-			padding: .5em;
-			div {
-				text-align: center;
-			}
-		}
-		&-title {
-			font-weight: bold;
-		}
-		&-content {
-			font-size: .9em;
-			padding: 1em;
-		}
 		&-permissions,
 		&-conditions,
 		&-limitations {

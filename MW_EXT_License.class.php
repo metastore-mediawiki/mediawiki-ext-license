@@ -260,7 +260,7 @@ class MW_EXT_License {
 		}
 
 		// Out HTML.
-		$outHTML = '<div class="mw-ext-license navigation-not-searchable"><div class="mw-ext-license-body">';
+		$outHTML = '<div class="mw-ext-license navigation-not-searchable mw-ext-box"><div class="mw-ext-license-body">';
 		$outHTML .= '<div class="mw-ext-license-icon"><div><i class="far fa-copyright"></i><i class="' . $outIcon . '"></i></div></div>';
 		$outHTML .= '<div class="mw-ext-license-content">';
 		$outHTML .= '<div class="mw-ext-license-title">' . $outTitle . '</div><p>' . $outDescription . '</p>' . $outContent;
