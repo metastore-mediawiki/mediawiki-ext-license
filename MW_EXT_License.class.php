@@ -177,7 +177,7 @@ class MW_EXT_License {
 	public static function onRenderTag( Parser $parser, $type = '' ) {
 		// Argument: type.
 		$getType = MW_EXT_Core::outClear( $type ?? '' ?: '' );
-		$outType = MW_EXT_Core::outConvert( $getType );
+		$outType = MW_EXT_Core::outNormalize( $getType );
 
 		// Check license type, set error category.
 		if ( ! self::getLicense( $outType ) ) {
