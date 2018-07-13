@@ -7,21 +7,8 @@ use MediaWiki\Extension\MW_EXT_Core\MW_EXT_Core;
 
 /**
  * Class MW_EXT_License
- * ------------------------------------------------------------------------------------------------------------------ */
+ */
 class MW_EXT_License {
-
-	/**
-	 * Get JSON data.
-	 *
-	 * @return mixed
-	 * -------------------------------------------------------------------------------------------------------------- */
-
-	private static function getData() {
-		$getData = file_get_contents( __DIR__ . '/storage/license.json' );
-		$outData = json_decode( $getData, true );
-
-		return $outData;
-	}
 
 	/**
 	 * Get license.
@@ -29,10 +16,9 @@ class MW_EXT_License {
 	 * @param $license
 	 *
 	 * @return mixed
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	private static function getLicense( $license ) {
-		$getData = self::getData();
+		$getData = MW_EXT_Core::getJSON( __DIR__ . '/storage/license.json' );
 
 		if ( ! isset( $getData['license'][ $license ] ) ) {
 			return false;
@@ -50,8 +36,7 @@ class MW_EXT_License {
 	 * @param $license
 	 *
 	 * @return mixed
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	private static function getLicenseTitle( $license ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
 
@@ -71,8 +56,7 @@ class MW_EXT_License {
 	 * @param $license
 	 *
 	 * @return mixed
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	private static function getLicenseIcon( $license ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
 
@@ -92,8 +76,7 @@ class MW_EXT_License {
 	 * @param $license
 	 *
 	 * @return mixed
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	private static function getLicenseContent( $license ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
 
@@ -113,8 +96,7 @@ class MW_EXT_License {
 	 * @param $license
 	 *
 	 * @return mixed
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	private static function getLicenseURL( $license ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
 
@@ -135,8 +117,7 @@ class MW_EXT_License {
 	 * @param $rule
 	 *
 	 * @return mixed
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	private static function getLicenseRule( $license, $rule ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
 
@@ -157,8 +138,7 @@ class MW_EXT_License {
 	 *
 	 * @return bool
 	 * @throws \MWException
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setFunctionHook( 'license', [ __CLASS__, 'onRenderTag' ] );
 
@@ -172,8 +152,7 @@ class MW_EXT_License {
 	 * @param string $type
 	 *
 	 * @return string
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	public static function onRenderTag( Parser $parser, $type = '' ) {
 		// Argument: type.
 		$getType = MW_EXT_Core::outClear( $type ?? '' ?: '' );
@@ -280,8 +259,7 @@ class MW_EXT_License {
 	 * @param Skin $skin
 	 *
 	 * @return bool
-	 * -------------------------------------------------------------------------------------------------------------- */
-
+	 */
 	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
 		$out->addModuleStyles( [ 'ext.mw.license.styles' ] );
 
