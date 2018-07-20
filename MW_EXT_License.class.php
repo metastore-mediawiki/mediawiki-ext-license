@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\MW_EXT_License;
 
 use OutputPage, Parser, Skin;
-use MediaWiki\Extension\MW_EXT_Core\MW_EXT_Core;
+use MediaWiki\Extension\MW_EXT_Kernel\MW_EXT_Kernel;
 
 /**
  * Class MW_EXT_License
@@ -18,7 +18,7 @@ class MW_EXT_License {
 	 * @return mixed
 	 */
 	private static function getLicense( $license ) {
-		$getData = MW_EXT_Core::getJSON( __DIR__ . '/storage/license.json' );
+		$getData = MW_EXT_Kernel::getJSON( __DIR__ . '/storage/license.json' );
 
 		if ( ! isset( $getData['license'][ $license ] ) ) {
 			return false;
@@ -155,8 +155,8 @@ class MW_EXT_License {
 	 */
 	public static function onRenderTag( Parser $parser, $type = '' ) {
 		// Argument: type.
-		$getType = MW_EXT_Core::outClear( $type ?? '' ?: '' );
-		$outType = MW_EXT_Core::outNormalize( $getType );
+		$getType = MW_EXT_Kernel::outClear( $type ?? '' ?: '' );
+		$outType = MW_EXT_Kernel::outNormalize( $getType );
 
 		// Check license type, set error category.
 		if ( ! self::getLicense( $outType ) ) {
@@ -175,14 +175,14 @@ class MW_EXT_License {
 
 		// Get content.
 		$getContent = self::getLicenseContent( $outType );
-		$outContent = empty( $getContent ) ? '' : '<p>' . MW_EXT_Core::getMessageText( 'license', $getContent ) . '</p>';
+		$outContent = empty( $getContent ) ? '' : '<p>' . MW_EXT_Kernel::getMessageText( 'license', $getContent ) . '</p>';
 
 		// Get URL.
 		$getURL = self::getLicenseURL( $outType );
 		$outURL = empty( $getURL ) ? '<em>' . $outTitle . '</em>' : '<a href="' . $getURL . '" rel="nofollow" target="_blank"><em>' . $outTitle . '</em></a>';
 
 		// Get description.
-		$getDescription = MW_EXT_Core::getMessageText( 'license', 'description' );
+		$getDescription = MW_EXT_Kernel::getMessageText( 'license', 'description' );
 		$outDescription = $getDescription . ': ' . $outURL;
 
 		// Get permission.
@@ -198,9 +198,9 @@ class MW_EXT_License {
 		$outLimitation = '';
 
 		// Loading messages.
-		$msgPermissions = MW_EXT_Core::getMessageText( 'license', 'permissions' );
-		$msgConditions  = MW_EXT_Core::getMessageText( 'license', 'conditions' );
-		$msgLimitations = MW_EXT_Core::getMessageText( 'license', 'limitations' );
+		$msgPermissions = MW_EXT_Kernel::getMessageText( 'license', 'permissions' );
+		$msgConditions  = MW_EXT_Kernel::getMessageText( 'license', 'conditions' );
+		$msgLimitations = MW_EXT_Kernel::getMessageText( 'license', 'limitations' );
 
 		// Render permission.
 		if ( $getPermission ) {
@@ -209,7 +209,7 @@ class MW_EXT_License {
 			$outPermission .= '<div class="mw-ext-license-permissions-list">';
 			$outPermission .= '<ul>';
 			foreach ( $getPermission as $value ) {
-				$outPermission .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
+				$outPermission .= '<li>' . MW_EXT_Kernel::getMessageText( 'license', $value ) . '</li>';
 			}
 			$outPermission .= '</ul></div></div>';
 		}
@@ -221,7 +221,7 @@ class MW_EXT_License {
 			$outCondition .= '<div class="mw-ext-license-conditions-list">';
 			$outCondition .= '<ul>';
 			foreach ( $getCondition as $value ) {
-				$outCondition .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
+				$outCondition .= '<li>' . MW_EXT_Kernel::getMessageText( 'license', $value ) . '</li>';
 			}
 			$outCondition .= '</ul></div></div>';
 		}
@@ -233,7 +233,7 @@ class MW_EXT_License {
 			$outLimitation .= '<div class="mw-ext-license-limitations-list">';
 			$outLimitation .= '<ul>';
 			foreach ( $getLimitation as $value ) {
-				$outLimitation .= '<li>' . MW_EXT_Core::getMessageText( 'license', $value ) . '</li>';
+				$outLimitation .= '<li>' . MW_EXT_Kernel::getMessageText( 'license', $value ) . '</li>';
 			}
 			$outLimitation .= '</ul></div></div>';
 		}
