@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extension\METADATA;
+namespace MediaWiki\Extension\MetaStore;
 
 use OutputPage, Parser, Skin;
 
@@ -14,19 +14,13 @@ class MW_EXT_License {
 	 *
 	 * @param $license
 	 *
-	 * @return mixed
+	 * @return array
 	 */
 	private static function getLicense( $license ) {
-		$getData = MW_EXT_Kernel::getJSON( __DIR__ . '/storage/license.json' );
+		$get = MW_EXT_Kernel::getJSON( __DIR__ . '/storage/license.json' );
+		$out = $get['license'][ $license ] ?? [] ?: [];
 
-		if ( ! isset( $getData['license'][ $license ] ) ) {
-			return false;
-		}
-
-		$getLicense = $getData['license'][ $license ];
-		$outLicense = $getLicense;
-
-		return $outLicense;
+		return $out;
 	}
 
 	/**
@@ -34,19 +28,13 @@ class MW_EXT_License {
 	 *
 	 * @param $license
 	 *
-	 * @return mixed
+	 * @return string
 	 */
 	private static function getLicenseTitle( $license ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
+		$out     = $license['title'] ?? '' ?: '';
 
-		if ( ! isset( $license['title'] ) ) {
-			return false;
-		}
-
-		$getTitle = $license['title'];
-		$outTitle = $getTitle;
-
-		return $outTitle;
+		return $out;
 	}
 
 	/**
@@ -54,19 +42,13 @@ class MW_EXT_License {
 	 *
 	 * @param $license
 	 *
-	 * @return mixed
+	 * @return mixed|string
 	 */
 	private static function getLicenseIcon( $license ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
+		$out     = $license['icon'] ?? '' ?: '';
 
-		if ( ! isset( $license['icon'] ) ) {
-			return false;
-		}
-
-		$getIcon = $license['icon'];
-		$outIcon = $getIcon;
-
-		return $outIcon;
+		return $out;
 	}
 
 	/**
@@ -74,19 +56,13 @@ class MW_EXT_License {
 	 *
 	 * @param $license
 	 *
-	 * @return mixed
+	 * @return mixed|string
 	 */
 	private static function getLicenseContent( $license ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
+		$out     = $license['content'] ?? '' ?: '';
 
-		if ( ! isset( $license['content'] ) ) {
-			return false;
-		}
-
-		$getContent = $license['content'];
-		$outContent = $getContent;
-
-		return $outContent;
+		return $out;
 	}
 
 	/**
@@ -94,19 +70,13 @@ class MW_EXT_License {
 	 *
 	 * @param $license
 	 *
-	 * @return mixed
+	 * @return mixed|string
 	 */
 	private static function getLicenseURL( $license ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
+		$out     = $license['url'] ?? '' ?: '';
 
-		if ( ! isset( $license['url'] ) ) {
-			return false;
-		}
-
-		$getURL = $license['url'];
-		$outURL = $getURL;
-
-		return $outURL;
+		return $out;
 	}
 
 	/**
@@ -115,19 +85,13 @@ class MW_EXT_License {
 	 * @param $license
 	 * @param $rule
 	 *
-	 * @return mixed
+	 * @return array
 	 */
 	private static function getLicenseRule( $license, $rule ) {
 		$license = self::getLicense( $license ) ? self::getLicense( $license ) : '';
+		$out     = $license['rule'][ $rule ] ?? [] ?: [];
 
-		if ( ! isset( $license['rule'][ $rule ] ) ) {
-			return false;
-		}
-
-		$getRule = $license['rule'][ $rule ];
-		$outRule = $getRule;
-
-		return $outRule;
+		return $out;
 	}
 
 	/**
